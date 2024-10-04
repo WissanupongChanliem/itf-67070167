@@ -1,7 +1,17 @@
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     background: #000000;
+    min-height: 100vh;
+    margin:0;
+    padding-top: 80px;
     color: #FFFFFF;
     font-family: 'Poppins','Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .navbar{
     width: 100vw;
@@ -10,7 +20,9 @@ body{
     position: fixed;
     top:0;
     left:0;
-    box-shadow: #730be9 0px 0px 20px 5px;
+    box-shadow: #6520b4 0px 0px 20px 5px;
+    backdrop-filter: blur(100px);
+    z-index: 50;
 }
 .nav-content{
     padding: 0px 20px 0px 20px;
@@ -31,52 +43,144 @@ body{
 .links{
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
-.links .sign-in{
+.links a{
     color: #FFFFFF;
-    padding: 5px 20px;
-    background-color: #730be9;
-    border-radius: 15px;
     text-decoration: none;
+}
+
+.links .contact{
+    padding: 5px 20px;
+    background-color: #6520b4;
+    border-radius: 15px;
 }
 
 .main-container{
     width: 100%;
     max-width: 1920px;
+    padding: 5rem 5rem;
     margin: 0px auto;
+    box-sizing: border-box;
+    
 }
-
-.main-container .banner-img{
-    object-fit: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 800px;
+.main-container .hero-section img{
+    position: absolute;
+    right: 0;
+    top:100px;
+    opacity: 0.6;
+    width: 800px;
+}
+.main-container .project-section h1,
+.main-container .project-section p{
+    text-align: center;
 }
 
 .main-container .hero-section{
-    background-image: url("static/pexels-miriamespacio-365633.jpg");
+    /*background-image: url("static/pexels-miriamespacio-365633.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 800px;
+    height: 500px;
+    position: relative;
+    margin-bottom: 250px;
+}
+hr{
+    margin: 3rem 0;
+}
+
+.projects-container {
+    height: 500px;
+    position: relative;
+}
+
+.projects-container .hide{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    backdrop-filter: blur(200px);
+    background-color: #000000cd;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+
+.projects-container .hide:hover{
+    opacity: 0;
+}
+
+.projects_gallery{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects_gallery img{
+    height: 400px;
 }
 
 footer{
-    width: 100vw;
+    width: 100%;
     height: 300px;
     background: #000000f8;
-    box-shadow: #730be9 0px 0px 20px -5px;
+    box-shadow: #6520b4 0px 0px 20px -5px;
+    
 }
 
 .footer-content{
-    padding: 0px 20px 0px 20px;
+    padding: 20px;
     width: 100%;
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
     align-items: center;
-    justify-content: space-between;
+}
+
+.footer-content .info-request-form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-content .socials{
+    grid-column: span 2;
+}
+
+.footer-content .socials a{
+    color:#FFFFFF;
+    text-decoration: underline;
+}
+
+.footer-content .info-request-form input{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer-content .info-request-form button{
+    padding: 1rem;
+    background: #6520b4;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.suggestion_group{
+    display: flex;
+    flex-wrap: nowrap;
+    gap:5px;
 }
