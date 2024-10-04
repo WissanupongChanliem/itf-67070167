@@ -1,0 +1,82 @@
+body{
+    background: #000000;
+    color: #FFFFFF;
+    font-family: 'Poppins','Courier New', Courier, monospace;
+}
+.navbar{
+    width: 100vw;
+    height: 80px;
+    background: #0000009f;
+    position: fixed;
+    top:0;
+    left:0;
+    box-shadow: #730be9 0px 0px 20px 5px;
+}
+.nav-content{
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title{
+    font-size: 1.5rem;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.links .sign-in{
+    color: #FFFFFF;
+    padding: 5px 20px;
+    background-color: #730be9;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.main-container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0px auto;
+}
+
+.main-container .banner-img{
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+}
+
+.main-container .hero-section{
+    background-image: url("static/pexels-miriamespacio-365633.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+}
+
+footer{
+    width: 100vw;
+    height: 300px;
+    background: #000000f8;
+    box-shadow: #730be9 0px 0px 20px -5px;
+}
+
+.footer-content{
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
