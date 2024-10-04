@@ -78,7 +78,6 @@ body{
 }
 
 .main-container .hero-section{
-    /*background-image: url("static/pexels-miriamespacio-365633.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
