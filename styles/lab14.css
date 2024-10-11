@@ -31,7 +31,7 @@ button{
 }
 
 #profile_picture {
-    background-image: url('/static/Arsr.png');
+    background-image: url('/static/Arsr_crop.png');
     background-position: center center;
     background-size: cover;
     border-radius: 100%;
