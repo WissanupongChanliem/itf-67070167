@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab14</title>
+    <link rel="stylesheet" href="styles/lab14.css"/>
+    <script src="scripts/lab14.js" defer></script>
+</head>
+<body>
+    <main>
+        <a id="username" href="https://github.com/WissanupongChanliem">วิษณุพงศ์ จันทร์เลี่ยม 67070167</a>
+        <div id="profile_picture">
+            <div class="notification">1</div>
+        </div>
+        <div class="form_horizontal">
+            Set the Username 
+            <input id="username_input" type="text" placeholder="Enter Username">
+            <button class="form_button" onclick="saveUsername()">Set</button>
+        </div>
+        <div class="form_horizontal">
+            Set the profile picture URL 
+            <input id="profile_url_input" type="url"placeholder="Enter Image URL">
+            <button class="form_button" onclick="saveProfileURL()">Set</button>
+        </div>
+        <h3 id="phonenumber_header">Phone Number List</h3>
+        <div class="form_horizontal">
+            <input id="phone_name_input" type="text" placeholder="Name">
+            <input id="phone_number_input" type="number" placeholder="Tel">
+            <button class="form_button" onclick="addPhoneNumberList()">Add</button>
+            <button class="form_button" onclick="saveCSV()">Export</button>
+        </div>
+        <table id="phone_book_table">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
